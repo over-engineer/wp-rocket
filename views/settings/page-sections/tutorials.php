@@ -46,6 +46,7 @@ $rocket_tutorials = [
 	</div>
 	<div class="wpr-Page-row">
 		<div class="wpr-Page-col">
+			<div id="wpr-tutorials-content" style="display:none;">
 	<?php foreach ( $rocket_tutorials as $section ) : // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound ?>
 	<div class="wpr-optionHeader">
 		<h3 class="wpr-title2"><?php echo esc_html( $section['title'] ); ?></h3>
@@ -60,6 +61,7 @@ $rocket_tutorials = [
 	<?php endforeach; ?>
 		</div>
 	<?php endforeach; ?>
+			</div>
 		</div>
 	</div>
 </div>
