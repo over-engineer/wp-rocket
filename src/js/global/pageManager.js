@@ -157,6 +157,7 @@ PageManager.prototype.change = function() {
         this.$tips.style.display = 'none';
         this.$submitButton.style.display = 'none';
         this.$content.classList.remove('isNotFull');
+		document.querySelector('#wpr-tutorials-dashboard').removeAttribute( 'style' );
     }
 
     // Exception for addons
@@ -182,5 +183,6 @@ PageManager.prototype.change = function() {
 
     if (this.pageId == "tutorials") {
         this.$submitButton.style.display = 'none';
+		document.querySelector('#wpr-tutorials-content').removeAttribute( 'style' );
     }
 };
